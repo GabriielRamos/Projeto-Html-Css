@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px 20px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-nav {
+    list-style: none;
+}
+
+.list-nav a{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #202020;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+.list-nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #202020;   
+    transform: scaleX(0);
+    transition: .3s;
+    transform-origin: left;
+}
+
+.list-nav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/*Header*/ 
+
+.estoque {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt1 h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #202020;
+    padding-bottom: 100px;
+}
+
+.carros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 200px;
+}
+
+.card {
+    background-color: #fff;
+    margin: 20px 16px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h1 {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.card p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #202020;
+}
+
+.card hr {
+    border: none;
+    border-top: 1px solid #202020;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.card .info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.card .preco {
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+}
+
+footer {
+    height: 120px;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #202020;
+}

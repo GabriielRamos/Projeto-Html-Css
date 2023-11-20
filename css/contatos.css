@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px 20px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-nav {
+    list-style: none;
+}
+
+.list-nav a{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #202020;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+.list-nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #202020;   
+    transform: scaleX(0);
+    transition: .3s;
+    transform-origin: left;
+}
+
+.list-nav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.main-contatos {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 280px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.main-contatos img {
+    width: 500px;
+    height: auto;
+    border: none;
+    border-radius: 15px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contatos i {
+    font-size: 50px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.contatos a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #202020;
+    text-decoration: none;
+    margin: 30px 0;
+}
+
+
+footer {
+    height: 120px;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #202020;
+}
